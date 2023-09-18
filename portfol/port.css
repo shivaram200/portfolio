@@ -1,0 +1,261 @@
+*{
+ margin:0px;
+ padding:0px;
+ box-sizing:border-box;
+ background:rgb(44, 41, 41);
+ color:rgb(75, 137, 173);
+
+}
+nav{
+    display:flex;
+    /* background: bisque; */
+    justify-content:space-between;
+}
+#navbar{
+    padding:27px;
+    
+}
+/* .container a{
+    margin:22px;
+    padding: 11px 25px 11px 28px;
+    border:2px solid rgb(77, 176, 219);
+    border-radius: 25px;
+
+} */
+.container i{
+    display:inline-flex;
+    border:2px solid  rgb(77, 176, 219);
+    height:37px;
+    border-radius:22px;
+    width:83px;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    z-index:1;
+    overflow: hidden;
+
+}
+.container i::before{
+    content:'';
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    position:absolute;
+    background:rgb(77, 176, 219);
+    z-index:-1;
+    transition:0.5s;
+}
+.container i:hover::before{
+    width:100%;
+}
+p{
+    font-family:serif;
+    font-size:px;
+}
+
+
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size:44px;
+    color:azure;
+    font-weight:700;
+    margin-left:58px;
+}
+.container{
+    margin-top:12px;
+    margin-right:78px;
+}
+.active{
+    background-color: rgb(77, 176, 219);
+    color:rgb(44, 41, 41);
+}
+ .container i:hover{
+    /*background-color: rgb(77, 176, 219);*/
+    color:rgb(44, 41, 41);
+    cursor:pointer;
+
+} 
+.home{
+    display: flex;
+    align-items: center;
+    padding-left:6%;
+    /* margin-left: 58px; */
+    height: 73vh;
+    
+}
+.home::after{
+    content:"";
+    top:0;
+    left:0;
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:rgb(44, 41, 41);
+    animation:showright 1s ease forwards;
+    animation-delay:.1s;
+}
+.inhome{
+    max-width:487px;
+    /* width:487px; */
+}
+.heads{
+    margin-bottom:21px;
+}
+.heads h1{
+    color:white;
+    font-size: 41px;
+}
+.heads h3{
+    font-size:26px;
+}
+.btn{
+    margin-top: 63px;
+    padding: 5px;
+}
+.btn button{
+    padding: 11px;
+    border:2px solid rgb(77, 176, 219);
+    border-radius: 16px;
+    position: relative;
+    z-index:10;
+    overflow:hidden;
+}
+.btn button::before{
+    content:' ';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    z-index:-1;
+    /* color: black; */
+    background:rgb(77, 176, 219);
+    transition:1s;
+
+}
+.btn button:hover{
+    color:rgb(0, 0, 0);
+}
+.btn button:hover::before{
+    width:100%;
+}
+
+.a{
+    margin-left: 21px;
+    
+}
+.contact{
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    left:92px;
+    bottom: 132px;
+    font-size:20px;
+    
+    width:244px;
+}
+
+
+.contact a{
+    display:inline-flex;
+    border:2px solid rgb(77, 176, 219);
+    height:58px;
+    width:60px;
+    
+    border-radius:50%;
+    font-size:29px;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    z-index:1;
+    overflow:hidden;
+}
+.contact a::before{
+    content:' ';
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    z-index:-1;
+    background:rgb(77, 176, 219);
+    transition:1s;
+    } 
+.contact a:hover::before{
+    width:100%;
+   
+}
+.main{
+    display:flex;
+    height:82vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.main::after{
+    content:"";
+    top:0;
+    left:0;
+    position:absolute;
+    height:100%;
+    width:100%;
+    background: rgb(44, 41, 41);
+    animation: showright 1s ease forwards;
+    animation-delay:.1s
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border:2px solid white;
+    border-radius: 25px;
+    width:33%;
+    height:29%;
+    align-items:center;
+    /* justify-content: center; */
+    justify-content:space-around;
+    /* overflow:hidden;
+    position: relative;
+    z-index:10; */
+    margin-left: 1%;
+}
+
+
+.box img{
+    height: 23%;
+    width:17% ;
+}
+.about{
+    display:flex;
+    flex-direction: column;
+    height:62vh;
+    width:100%;
+    align-items: center;
+    justify-content:center;
+}
+.about h2{
+    margin-bottom: 2%;
+}
+.about p{
+   font-size: large;
+}
+.about::before{
+    content:"";
+    top:0;
+    left:0;
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:rgb(44, 41, 41);
+    animation:showright 1s ease forwards;
+    animation-delay:.1s;
+}
+
+@keyframes
+showright{
+    100%{
+        width:0;
+    }
+}
